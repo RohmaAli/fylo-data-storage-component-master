@@ -1,31 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Raleway">
+  <link rel="stylesheet" href="style.css">
+  <title>challenge 2</title>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Fylo data storage component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
-
-  You’ve used 815 GB of your storage
-
-  185 GB Left
-  
-  0 GB
-  1000 GB
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="container">
+    <div style=" height: 50vh; background-color: var(--bg-color);">
+      <div class="container d-flex align-items-center justify-content-center ml-5">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <div class="d-flex justify-content-center">
+              <img class="card-img-top w-10%" src="/images/logo.svg" alt="logo">
+            </div>
+    
+            <div class="box d-flex align-items-center justify-content-center">
+              <div class="card" style="border-top-right-radius: 10px; width: 50px; height: 50px; background-color: var(--bg-color);">
+                <div class="card-body">
+                  <img style="padding-bottom: 10px; padding-top: 0px;" src="/images/icon-document.svg" alt="document">
+                </div>
+              </div>
+              <div class="card" style="border-top-right-radius: 10px; width: 50px; height: 50px;  background-color: var(--bg-color);">
+                <div class="card-body">
+                  <img style="padding-bottom: 10px; padding-top: 0px;" src="/images/icon-folder.svg" alt="document">
+                </div>
+              </div>
+              <div class="card" style="border-top-right-radius: 10px; width: 50px; height: 50px;  background-color: var(--bg-color);">
+                <div class="card-body">
+                  <img style="padding-bottom: 10px; padding-top: 0px;" src="/images/icon-upload.svg" alt="document">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="card" style="border-top-right-radius: 10px; width: 50%;">
+          <div class="card-body">
+            <p class="card-text">
+              You've used <b>815 GB </b>of your storage
+            </p>
+    
+            <div class="progress" data-toggle="tooltip" data-placement="top" title="815 GB left">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 80%" style="width: 25%"
+                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="below-progressbar d-flex justify-content-between">
+              <div>
+                <p>0 GB</p>
+              </div>
+              <div>
+                <p>1000 GB</p>
+              </div>
+            </div>
+    
+          </div>
+        </div>  
+      </div>
+    </div>
+    <div style=" height: 50vh">
+      <img src="/images/bg-desktop.svg" alt="">
+    </div>
   </div>
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </body>
+
 </html>

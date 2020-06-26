@@ -1,0 +1,29 @@
+:root{
+    --bg-color: hsl(229, 57%, 11%);
+    --card-color: hsl(229, 7%, 55%)
+}
+*{
+    font-family: 'Raleway';
+    font-size: 14px;
+    font-weight: 400, 700;
+
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--bg-color);
+    background-repeat: no-repeat, repeat;
+
+  }
+  .container>div {
+    margin: 10px;
+  }
+
+  .card {
+    border-radius: 10px;
+    border-top-right-radius: 70px;
+    background-color: var(--card-color);
+  }
+  .box > div {
+    margin: 10px;
+  }
+
